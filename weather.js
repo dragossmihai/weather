@@ -44,7 +44,7 @@ $(".forecast").empty();
 $("#current-conditions-icon").append(Math.round(response.currently.temperature) + " °F");
 $("#location").append(window.response);
 $("#current-conditions-text").append(response.daily.summary);
-$(".current").fadeIn(4000); // doesnt work for now
+$(".current").fadeIn(4000); 
 
 // LOOP for forecast
 
