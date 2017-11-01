@@ -37,13 +37,14 @@ let handleWeatherResponse = function(response) {
 
 // DOM for current weather
 
+;
 $("#current-conditions-icon").empty();
 $("#current-conditions-text").empty();
 $(".forecast").empty();
 $("#current-conditions-icon").append(Math.round(response.currently.temperature) + " °F");
 $("#location").append(window.response);
 $("#current-conditions-text").append(response.daily.summary);
-$(".row current").fadeIn(2000); // doesnt work for now
+$(".current").fadeIn(4000); // doesnt work for now
 
 // LOOP for forecast
 
@@ -57,7 +58,7 @@ for(let i=0; i<6; i++) {
   }
 
 $(".forecast").append(markup);
-$(".forecast").fadeIn(2000); // doesnt work for now
+$(".forecast").fadeIn(4000);
 
   // *** your code ends here - no, really.
 };
